@@ -30,4 +30,6 @@
   - 인자, 리턴주소, 지역변수가 들어감
   - LIFO 구조를 띄며 push, pop으로 관리한다.
   - ESP(Extended Stack Pointer) 스텍에 탑을 가리킨다. pop, push시 ESP를 움직인다.
-  - 스택 접근 구조는 다시 해볼것
+  - 함수가 호출되면 stack에 push되고 끝나면 pop 된다
+  - stack frame : 함수가 저장되는 단위로 argument(여러개일경우 뒷 인자부터), return address, saved ebp(6장에서 배움) local variables 순으로 push 된다.
+  
